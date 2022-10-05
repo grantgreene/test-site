@@ -17,8 +17,8 @@
   --clr-footer-text: #fff;
   --clr-footer-bg: #000;
 
-  --fs-body: 1rem;
-  --fs-post-title: 1.1rem;
+  --fs-body: 1.1rem;
+  --fs-post-title: 1.3rem;
   --fs-post-meta: 0.9rem;
   --fs-sidebar-title: 1.5rem;
   --fs-about-the-author-title: 1.4rem;
@@ -151,6 +151,10 @@ header ul li a {
 
 header ul li a:hover {
   background-color: var(--clr-nav-border);
+}
+
+.featured-posts .container {
+  margin-top: 15px;
 }
 
 .featured-posts .featured-post,
@@ -323,7 +327,6 @@ header ul li a:hover {
 .archives-page-content .archives-filter {
   background-color: #dfdfdf;
   max-height: 0;
-  margin-bottom: 20px;
   text-align: center;
   overflow-y: hidden;
   transition: all 0.3s ease-in-out;
@@ -341,6 +344,7 @@ header ul li a:hover {
 
 .archives-page-content .archives-filter.open {
   max-height: 300px;
+  margin-bottom: 25px;
 }
 
 .archives-page-content .archives-filter-title {
@@ -586,3 +590,56 @@ footer ul li:last-child a {
 
 }
 
+@media (max-width: 500px) {
+  
+  header .logo {
+    width: 200px;
+  }
+
+  .nav-toggler {
+    top: 35px;
+  }
+
+}
+
+
+@media (max-width: 300px) {
+
+  header .logo {
+    width: 150px;
+  }
+
+  .nav-toggler {
+    top: 22px;
+    right: 15px
+  }
+
+  .featured-posts .featured-post-img, 
+  .feed-posts .feed-post-img, 
+  .archives-posts .archives-post-img {
+    display: none;
+  }
+
+  .home-bottom .browse-by-league .sidebar-section-content a:nth-child(3n) {
+    margin-right: 15px;
+  }
+
+  .home-bottom .browse-by-league .sidebar-section-content a:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  footer .footer-logo {
+    width: 150px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+}
