@@ -201,6 +201,22 @@ header .nav-btn {
   color: #aa0000;
  }
 
+ .home-posts-bottom .more-posts-btn {
+  background-color: #aa0000;
+  border: 2px solid #880000;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 15px 40px;
+ }
+
+ .home-posts-bottom div:last-of-type {
+  justify-self: center;
+  grid-column: 2/3;
+ }
+
  footer {
   align-items: center;
   background-color: #000;
@@ -296,13 +312,13 @@ header .nav-btn {
   }
 
   header nav .dropdown li a {
-    color: #aa0000;
-    font-size: 1.1rem;
+    color: #000;
+    font-size: 1.2rem;
   }
 
   header nav .dropdown li a:hover {
     background-color: #ebebeb;
-    color: #aa0000;
+    color: #000;
   }
 
   header nav .dropdown.open {
@@ -321,6 +337,10 @@ header .nav-btn {
   .home-posts-middle .container,
   .home-posts-bottom .container {
     grid-template-columns: 1fr;
+  }
+
+  .home-posts-bottom div:last-of-type {
+    grid-column: 1/1;
   }
 
   footer .footer-logo {
