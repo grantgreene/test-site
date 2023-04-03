@@ -256,6 +256,111 @@ header .nav-btn {
   text-decoration: underline;
  }
 
+ .archives-main {
+  margin-bottom: 30px;
+ }
+
+ .archives-main .container {
+  align-items: start;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 2fr 5fr;
+ }
+
+ .archives-main .archives-filter {
+  background-color: #f1f1f1;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+ }
+
+ .archives-main .archives-filter-btn {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  user-select: none;
+ }
+ 
+ .archives-main .archives-filter .filter-title {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #aa0000;
+  font-size: 1.5rem;
+  margin: 15px 15px 0;
+  padding: 5px 15px;
+  text-align: center;
+ }
+
+ .archives-main .archives-filter > div:nth-of-type(2) {
+  padding: 15px;
+ }
+
+ .archives-main .archives-filter div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+ }
+
+  .archives-main .archives-filter div label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+ .archives-main .archives-filter div input, 
+ .archives-main .archives-filter div select {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 40px;
+  padding: 5px;
+  width: 250px;
+ }
+
+ .archives-main .archives-filter div input {
+  margin-bottom: 10px;
+ }
+
+ .archives-main .archives-filter div button {
+  background-color: #aa0000;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 40px;
+  width: 250px;
+ }
+
+ .archives-main .archives-posts .archives-post {
+  border-bottom: 1px solid #cecece;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  padding: 10px 5px 5px;
+ }
+
+ .archives-main .archives-posts .archives-post .archives-post-title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+ }
+
+ .archives-main .archives-posts .archives-post .archives-post-title a {
+  color: #222
+ }
+
+ .archives-main .archives-posts .archives-post .archives-post-meta {
+  color: #aa0000;
+  font-size: 0.9rem;
+  font-weight: bold;
+ }
+
+ .archives-main .archives-posts .archives-post .archives-post-meta a {
+  color: #aa0000;
+ }
+
  @media (max-width: 970px) {
 
   header {
@@ -345,6 +450,44 @@ header .nav-btn {
 
   footer .footer-logo {
     width: 150px;
+  }
+
+  .archives-main .container {
+    column-gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .archives-main .archives-filter-btn {
+    display: block;
+  }
+
+  .archives-main .archives-filter {
+    margin-bottom: 30px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .archives-main .archives-filter.open {
+    max-height: 500px;
+  }
+
+  .archives-main .archives-filter div input, 
+  .archives-main .archives-filter div select {
+    width: 350px;
+  }
+
+  .archives-main .archives-filter div button {
+    width: 350px;
+  }
+
+  .archives-main .archives-posts .archives-post .archives-post-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .archives-main .archives-posts .archives-post .archives-post-meta {
+    font-size: 0.7rem;
   }
 
  }
