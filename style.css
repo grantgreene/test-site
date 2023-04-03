@@ -286,8 +286,9 @@ header .nav-btn {
  
  .archives-main .archives-filter .filter-title {
   border-radius: 5px;
-  color: #fff;
-  background-color: #aa0000;
+  color: #222;
+  background-color: #e6e6e6;
+  border: 1px solid #b8b8b8;
   font-size: 1.5rem;
   margin: 15px 15px 0;
   padding: 5px 15px;
